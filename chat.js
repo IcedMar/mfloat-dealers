@@ -1,4 +1,7 @@
 // Firebase configuration
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+import { getFirestore, collection, doc, getDoc, addDoc, query, where, orderBy, onSnapshot } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
+
 const firebaseConfig = {
     apiKey: "AIzaSyAKNdNQrZRs1Fx7FQnTw3GABYbrqihcoMk",
     authDomain: "the-m-float.firebaseapp.com",
@@ -8,8 +11,8 @@ const firebaseConfig = {
     appId: "1:91662213348:web:d437c5cea934a21e1c4cf1"
   };
 // Firebase Initialization
-firebase.initializeApp(firebaseConfig);
-const db = firebase.firestore();
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
 
 // Get sender ID from authentication or session
 const senderId = localStorage.getItem("userId"); // Example: Store user ID in local storage after login
