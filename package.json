@@ -11,6 +11,7 @@
     "dotenv": "^16.4.7",
     "emoji-regex": "^8.0.0",
     "escalade": "^3.2.0",
+    "express": "^4.21.2",
     "faye-websocket": "^0.11.4",
     "firebase": "^11.5.0",
     "get-caller-file": "^2.0.5",
@@ -34,12 +35,13 @@
     "yargs": "^17.7.2",
     "yargs-parser": "^21.1.1"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
-  "keywords": ["Junie"],
+  "keywords": [
+    "Junie"
+  ],
   "author": "Marine Benard",
   "license": "ISC",
   "description": ""
