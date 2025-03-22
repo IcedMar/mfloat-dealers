@@ -1,13 +1,14 @@
 {
   "name": "dealers",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "server.js",
   "dependencies": {
     "ansi-regex": "^5.0.1",
     "ansi-styles": "^4.3.0",
     "cliui": "^8.0.1",
     "color-convert": "^2.0.1",
     "color-name": "^1.1.4",
+    "dotenv": "^16.4.7",
     "emoji-regex": "^8.0.0",
     "escalade": "^3.2.0",
     "faye-websocket": "^0.11.4",
@@ -35,10 +36,11 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
-  "keywords": ["JuneLovie"],
-  "author": "Marine Benard Odondi",
+  "keywords": ["Junie"],
+  "author": "Marine Benard",
   "license": "ISC",
   "description": ""
 }

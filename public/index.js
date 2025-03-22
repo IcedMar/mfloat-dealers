@@ -1,13 +1,13 @@
-// Firebase Configuration (Replace with your own)
-const firebaseConfig = {
-    apiKey: "AIzaSyAKNdNQrZRs1Fx7FQnTw3GABYbrqihcoMk",
-    authDomain: "the-m-float.firebaseapp.com",
-    projectId: "the-m-float",
-    storageBucket: "the-m-float.firebasestorage.app",
-    messagingSenderId: "91662213348",
-    appId: "1:91662213348:web:5777527c8eb4db851c4cf1"
-  };
+require('dotenv').config(); // Add this line at the top of your file
 
+const firebaseConfig = {
+    apiKey: process.env.FIREBASE_API_KEY,
+    authDomain: process.env.FIREBASE_AUTH_DOMAIN,
+    projectId: process.env.FIREBASE_PROJECT_ID,
+    storageBucket: process.env.FIREBASE_STORAGE_BUCKET,
+    messagingSenderId: process.env.FIREBASE_MESSAGING_SENDER_ID,
+    appId: process.env.FIREBASE_APP_ID
+};
 // Initialize Firebase
 const app = firebase.initializeApp(firebaseConfig);
 const db = firebase.firestore();

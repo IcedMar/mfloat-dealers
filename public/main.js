@@ -1,13 +1,13 @@
-// Firebase Configuration (Replace with your own)
+// Firebase configuration
 const firebaseConfig = {
     apiKey: "AIzaSyAKNdNQrZRs1Fx7FQnTw3GABYbrqihcoMk",
     authDomain: "the-m-float.firebaseapp.com",
     projectId: "the-m-float",
     storageBucket: "the-m-float.firebasestorage.app",
     messagingSenderId: "91662213348",
-    appId: "1:91662213348:web:5777527c8eb4db851c4cf1"
+    appId: "1:91662213348:web:d437c5cea934a21e1c4cf1"
   };
-
+  
 // Initialize Firebase
 const app = firebase.initializeApp(firebaseConfig);
 const db = firebase.firestore();
