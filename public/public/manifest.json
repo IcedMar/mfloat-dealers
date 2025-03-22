@@ -1,0 +1,21 @@
+{
+  "name": "MFLOAT Dealer",
+  "short_name": "MFLOAT CC",
+  "description": "Tool for dealers to sell cash float to MPESA agents.",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#008000",
+  "theme_color": "#FFD700",
+  "icons": [
+    {
+      "src": "icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
