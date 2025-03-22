@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dealer Login</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-form">
+            <img src="logo.png" alt="Logo" class="login-logo">
+            <h2>Dealer Login</h2>
+            <input type="text" id="dealer-username" placeholder="Username" required>
+            <input type="password" id="dealer-password" placeholder="Password" required>
+            <button id="login-button">Login</button>
+            <p id="login-message"></p>
+        </div>
+    </div>
+    <script type="module" src="index.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth-compat.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore-compat.js"></script>
+    <script>
+    // Register Service Worker
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("service-worker.js")
+      .then(() => console.log("Service Worker Registered"))
+      .catch((err) => console.error("Service Worker Registration Failed", err));
+    }
+    </script>
+</body>
+</html>
